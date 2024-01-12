@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+.sidebar {
+    position: absolute;
+    background-color: grey;
+    font-family: 'Lucida Sans', sans-serif;
+    /* width: 440px; */
+    height: 110vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav
+{
+    padding: 37px;;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size:30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a
+{
+    text-decoration: none;   /*to remove underlines*/
+    color:black;
+}
+
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    padding: 23px;
+}
+
+
+.container
+{
+    display:flex;
+}
+
+.infoContainer
+{
+    /* background-color: pink; */
+    height:60vh;
+    width: 80vw;
+    margin:135px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.devinfo
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello
+{
+    font-size: 3em;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.name
+{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.about
+{
+    font-size: 30px;
+}
+.buttons
+{
+    margin-top: 20px;
+
+}
+
+.btn
+{
+   padding: 9px 14px;
+   border-radius: 20px;
+   color: white;
+   background-color: rgb(0, 110, 255);
+   font-weight:bold;
+   font-size: 20px;
+   margin:0 3px;
+   cursor:pointer;
+   
+}
+
+.btn-sm
+{
+    font-size:17px;
+}
+
+.btn:hover{
+    background-color:white;
+    color: rgb(0, 110, 255);
+}
+
+.manPic img
+{
+   width: 300px;
+   height:320px;
+   border-radius:300px;
+   box-shadow: 2px 5px 5px 6px;
+}
+
+.contactform
+{
+    padding: 10px 34px;
+    padding-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+    margin:0 300px;   /* margin: top-bottom left-right*/
+    background-color: grey;
+    box-shadow: 2px 5px 8px 2px;
+    border-radius: 20px;
+}
+
+.contactform h1
+{
+   font-family: 'Times New Roman', Times, serif;
+   padding: 20px 0;
+}
+
+.contactform form div
+{
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input
+{
+   width: 25vw;
+   border-radius: 5px;
+   margin: 6px 0 0 0;
+   padding: 4px;
+}
+
+/* #emailhelp
+{
+    
+    color: midnightblue;
+    margin: 0 5px;
+} */
+
+#form-check
+{
+    flex-direction: row;
+}
+
+#form-check input{
+    width:20px;
+    margin: 3px 0;
+}
+.intro
+{
+    margin: 20px 200px;
+}
+.intro h2
+{
+    font-family: 'Gill Sans', sans-serif;
+    margin:0, 12px;
+}
+
+.intro p
+{
+    font-family: 'Gill Sans', sans-serif;
+    margin: 12px;
+}
+
+
+.skillcontainer
+{
+    padding: 12px;
+}
+.skillitem
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skill
+{
+    width: 260px;
+    height: 6px;
+    /* background-color: red; */
+    border: solid black;
+}
+
+.hundered
+{
+    width: 300px;
+    background-color: blueviolet;
+}
+
+.fifty
+{
+    width: 150px;
+    background-color: yellowgreen;
+}
+
+.t5
+{
+    width: 149px;
+    background-color: red;
+}
+
+@media (max-width:1200px)
+{
+    /* *{
+        background-color: rgb(105, 70, 70);
+    } */
+    .buttons
+    {
+        font-size: 5px;
+    }
+    .devinfo
+    {
+        font-size: 10px;
+    }
+    .devpic
+    {
+        display: none;
+    }
+   .intro, .contactform{
+    margin: 8px;
+   }
+}
+
+.sidebargo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+
+.hamb
+{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+}
+
+.cross
+{
+    margin-left:180px;
+}
